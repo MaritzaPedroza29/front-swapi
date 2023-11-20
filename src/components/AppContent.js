@@ -21,7 +21,7 @@ const AppContent = () => {
               )
             )
           })}
-          <Route path="/" element={<Navigate to="/partidoscreados" replace />} />
+          <Route path="/" element={<Navigate to="/personajes" replace />} />
         </Routes>
       </Suspense>
     </CContainer>

@@ -2,32 +2,39 @@ import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
   cilDescription,
-  cibGhost,
+  cilMovie,
   cilPuzzle,
-  cilDoor,
-  cilUser
+  cilPaw,
+  cilUser,
+  cilCircle
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const sidebarnav = [
   {
     component: CNavItem,
-    name: 'Salones',
-    to: '/salones',
-    icon: <CIcon icon={cibGhost} customClassName="nav-icon" />,
+    name: 'Personajes',
+    to: '/personajes',
+    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Puertas',
-    to: '/puertas',
-    icon: <CIcon icon={cilDoor} customClassName="nav-icon" />,
+    name: 'Planetas',
+    to: '/planetas',
+    icon: <CIcon icon={cilCircle} customClassName="nav-icon" />,
   },{
     component: CNavItem,
-    name: 'Usuarios',
-    to:'/usuarios',
-    icon: <CIcon icon={cilUser} customClassName="nav-icon" />
+    name: 'Peliculas',
+    to:'/peliculas',
+    icon: <CIcon icon={cilMovie} customClassName="nav-icon" />
   },
   {
+    component: CNavItem,
+    name: 'Especies',
+    to:'/especies',
+    icon: <CIcon icon={cilPaw} customClassName="nav-icon" />
+  },
+  /*{
     component: CNavGroup,
     name: 'Base',
     to: '/base',
@@ -45,7 +52,7 @@ const sidebarnav = [
     name: 'Docs',
     href: 'https://coreui.io/react/docs/templates/installation/',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
-  },
+  },*/
 ]
 
 export default sidebarnav

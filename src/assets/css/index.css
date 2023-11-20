@@ -1,0 +1,9 @@
+.mio-card{
+    width: 200px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.mio-cardpeliculas{
+    width: 300px;
+    margin-bottom: 10px;
+}
