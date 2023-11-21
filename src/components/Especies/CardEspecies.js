@@ -12,7 +12,7 @@ const CardEspecies= ({especie})=>{
     return(
         <CCard className='mio-cardpeliculas'>
             <CCardHeader>
-                <CCardTitle>{especie.nombre}</CCardTitle>
+                <CCardTitle className='text-center'>{especie.nombre}</CCardTitle>
             </CCardHeader>
             <CCardBody>
                 <CCardText>Idioma: {especie.idioma}</CCardText>

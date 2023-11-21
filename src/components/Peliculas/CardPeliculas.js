@@ -12,7 +12,7 @@ const CardPeliculas= ({pelicula})=>{
     return(
         <CCard className='mio-cardpeliculas'>
             <CCardHeader>
-                <CCardTitle>{pelicula.titulo}</CCardTitle>
+                <CCardTitle className='text-center'>{pelicula.titulo}</CCardTitle>
             </CCardHeader>
             <CCardBody>
                 <CCardText>director:{pelicula.director}</CCardText>

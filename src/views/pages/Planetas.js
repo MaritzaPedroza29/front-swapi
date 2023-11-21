@@ -18,11 +18,9 @@ const Planetas= ()=>{
     console.log(planetas);
     return (
         <CContainer className="mt-3 mb-3">
-            <h3 className="text-center">Planetas</h3>
-            <CRow className="d-flex flex-wrap justify-content-between">
-                <CCol xs={12} sm={6} md={4} lg={3}>
-                    {planetas.map(planeta =><CardPlanetas key={planeta.id} planeta={planeta}/>)}
-                </CCol>
+            <h3 className="text-center mt-3 mb-3">Planetas</h3>
+            <CRow className="justify-content-between">
+                {planetas.map(planeta =><CCol><CardPlanetas key={planeta.id} planeta={planeta}/></CCol>)}
             </CRow>        
         </CContainer>
     )

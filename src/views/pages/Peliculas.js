@@ -18,11 +18,9 @@ const Peliculas= ()=>{
     console.log(peliculas);
     return (
         <CContainer className="mt-3 mb-3">
-            <h3 className="text-center">Peliculas</h3>
-            <CRow className="d-flex flex-wrap justify-content-between">
-                <CCol xs={12} sm={6} md={4} lg={3}>
-                    {peliculas.map(pelicula =><CardPeliculas key={pelicula.id} pelicula={pelicula}/>)}
-                </CCol>
+            <h3 className="text-center mt-3 mb-3">Peliculas</h3>
+            <CRow className="justify-content-between">
+                {peliculas.map(pelicula =><CCol><CardPeliculas key={pelicula.id} pelicula={pelicula}/></CCol>)}
             </CRow>        
         </CContainer>
     )

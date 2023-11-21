@@ -1,9 +1,16 @@
 .mio-card{
-    width: 200px;
+    width: 250px;
     margin-bottom: 10px;
-    display: flex;
+    height: 250px;
 }
 .mio-cardpeliculas{
     width: 300px;
     margin-bottom: 10px;
+}
+.mio-sidebar{
+    background-color: #2979FF;
+    padding: '10px';
+}
+.mio-contenedor{
+    display: flex;
 }

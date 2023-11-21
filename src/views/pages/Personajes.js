@@ -18,11 +18,9 @@ const Personajes= ()=>{
     console.log(personajes);
     return (
         <CContainer className="mt-3 mb-3">
-            <h3 className="text-center">Personajes</h3>
-            <CRow className="d-flex flex-wrap justify-content-between">
-                <CCol xs={12} sm={6} md={4} lg={3}>
-                    {personajes.map(personaje =><CardPersonajes key={personaje.id} personaje={personaje}/>)}
-                </CCol>
+            <h3 className="text-center mt-3 mb-3">Personajes</h3>
+            <CRow>
+                {personajes.map(personaje =><CCol><CardPersonajes key={personaje.id} personaje={personaje}/></CCol>)}
             </CRow>        
         </CContainer>
     )

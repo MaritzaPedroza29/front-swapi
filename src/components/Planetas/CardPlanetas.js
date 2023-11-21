@@ -12,7 +12,7 @@ const CardPlanetas= ({planeta})=>{
     return(
         <CCard className='mio-card'>
             <CCardHeader>
-                <CCardTitle>{planeta.nombre}</CCardTitle>
+                <CCardTitle className='text-center'>{planeta.nombre}</CCardTitle>
             </CCardHeader>
             <CCardBody>
                 <CCardText>Clima:{planeta.clima}</CCardText>

@@ -18,11 +18,9 @@ const Especies= ()=>{
     console.log(especies);
     return (
         <CContainer className="mt-3 mb-3">
-            <h3 className="text-center">Especies</h3>
-            <CRow className="d-flex flex-wrap justify-content-between">
-                <CCol xs={12} sm={6} md={4} lg={3}>
-                    {especies.map(especie =><CardPeliculas key={especie.id} especie={especie}/>)}
-                </CCol>
+            <h3 className="text-center mt-3 mb-3">Especies</h3>
+            <CRow className="justify-content-between">
+                {especies.map(especie =><CCol><CardPeliculas key={especie.id} especie={especie}/></CCol>)}
             </CRow>        
         </CContainer>
     )
